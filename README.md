@@ -5,7 +5,7 @@ Devlog for the project can be found here.
 
 ## The Costume
 The costume itself consists of three main objects:
-* [The Cap](https://github.com/unlindged/wha_oc/tree/main/hat)
+* [The Hat](https://github.com/unlindged/wha_oc/tree/main/hat)
 * The Palm Quire
 * The Cloak
 
