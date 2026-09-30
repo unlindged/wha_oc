@@ -1,0 +1,21 @@
+:root { --bg: #fff; --text: #1c2536; --muted: #5d6a80; --line: #d9dfe8; --accent: #1f5fd6; --code: #eef1f6; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #12161f; --text: #e4e9f2; --muted: #93a0b6; --line: #2a3242; --accent: #7aa7ff; --code: #1d2331; }
+}
+body { margin: 0 auto; max-width: 40rem; padding: 2rem 1.25rem 4rem; background: var(--bg); color: var(--text);
+  font: 1.05rem/1.7 Charter, "Iowan Old Style", Georgia, serif; }
+h1, h2, h3 { font-family: system-ui, sans-serif; line-height: 1.25; }
+a { color: var(--accent); }
+header { border-bottom: 1px solid var(--line); margin-bottom: 1.5rem; }
+header h1 { margin: 0; }
+header h1 a { color: var(--text); text-decoration: none; }
+header p { color: var(--muted); margin: .25rem 0 1.25rem; }
+#posts { list-style: none; padding: 0; }
+#posts li { display: flex; justify-content: space-between; gap: 1rem; padding: .75rem 0; border-bottom: 1px solid var(--line); }
+time { color: var(--muted); font: .9rem system-ui, sans-serif; white-space: nowrap; }
+code { background: var(--code); padding: .1em .35em; border-radius: 3px; font-size: .9em; }
+pre { background: var(--code); padding: 1rem; border-radius: 6px; overflow-x: auto; }
+pre code { padding: 0; background: none; }
+img { max-width: 100%; }
+blockquote { margin-left: 0; padding-left: 1rem; border-left: 3px solid var(--line); color: var(--muted); }
+.back { margin-top: 3rem; }
