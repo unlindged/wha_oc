@@ -12,4 +12,4 @@ The costume itself consists of three main objects:
 These three objects are meant to function together as kind of a a little "Internet of Things" project with the palm quire as its "control center". Each object has its own folder with specific details about its design and implementation.
 
 ## Devlogs
-* [20260927](/devlog/20260927.md)
+* [20260927](/devlog/20260927/20260927.md)
