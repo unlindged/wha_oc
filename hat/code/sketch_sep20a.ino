@@ -33,7 +33,7 @@ void loop() {
 
     if(up_reading == LOW && up_lastButtonState == HIGH){
       Serial.println("Up pressed");
-      val += 0b000010;
+      val += 25;
     }
   }
 
@@ -43,17 +43,22 @@ void loop() {
 
     if(down_reading == LOW && down_lastButtonState == HIGH){
       Serial.println("Down pressed");
-      val -= 0b000010;
+      val -= 25;
     }
   }
   up_lastButtonState = up_reading;
   down_lastButtonState = down_reading;
 
-  if(val < 0b000000){
-    val = 0b000000;
+
+  if(val < 0){
+    val = 0;
   }
-  if(val > 0b001110){
-    val = 0b001110;
+  if(val > 255){
+    val = 255;
   }
-  PORTB = val;
+
+  
+  analogWrite(redpin, val);
+  analogWrite(greenpin, val);
+  analogWrite(bluepin, val);
 }
