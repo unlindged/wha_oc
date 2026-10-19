@@ -13,3 +13,4 @@ These three objects are meant to function together as kind of a a little "Intern
 
 ## Devlogs
 * [20260927](/devlog/20260927/20260927.md)
+* [20261010](/devlog/20261010/20261010.md)
